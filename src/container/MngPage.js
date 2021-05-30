@@ -174,20 +174,20 @@ export default function Dashboard() {
               <Container>
                 <Menu.Item
                   as={Link}
-                  to="/seasons"
+                  to="/manage/seasons"
                   active
                 >
                 <Divider />
-                <Button style={{height: 50}} fullWidth href='/seasons'> 시즌상품 등록 </Button>
+                <Button style={{height: 50}} fullWidth href='/manage/seasons'> 시즌상품 관리 </Button>
                 <Divider />
                 </Menu.Item>
 
                 <Menu.Item
                   as={Link}
-                  to="/rqdocs"
+                  to="/manage/rqdocs"
                 >
                 <Divider />
-                <Button style={{height: 50}} fullWidth href='/rqdocs'> 신청서 상태 관리 </Button>
+                <Button style={{height: 50}} fullWidth href='/manage/rqdocs'> 신청서 상태 관리 </Button>
                 <Divider />
                 </Menu.Item>
             </Container>
@@ -199,8 +199,8 @@ export default function Dashboard() {
         <div className={classes.appBarSpacer} />
 
             
-            <Route exact path="/seasons" component={SeasonPage} />
-            <Route exact path="/rqdocs" component={RqdocPage} />
+            <Route exact path="/manage/seasons" component={SeasonPage} />
+            <Route exact path="/manage/rqdocs" component={RqdocPage} />
             
             <Box pt={4}>
             <Copyright/>

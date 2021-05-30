@@ -133,7 +133,8 @@ export default class CtlSeasonAddBtn extends Component {
         this.createReview()
             .then((response) => {
                 console.log(response.data);
-                
+                // refresh this page
+                window.location.reload();
             })
             .catch((error) => {
                 console.log(error);
